@@ -10,4 +10,6 @@ Télécharger les données : ...
 
 Consulter la documentation : ...
 
-Citer ces scripts : Parc-Géoparc Normandie-Maine, 2022-2024
+La réutilisation est libre, toutefois nous apprécierons si vous nous en informez (voir page du projet). Conformément à la licence il est nécessaire d'indiquer l'auteur en cas d'utilisation. Citer ces scripts : Parc-Géoparc Normandie-Maine, 2022-2024
+
+Utilisez la page du projet pour nous contacter en cas de question.

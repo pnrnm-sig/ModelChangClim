@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters name="Ordinary Kriging">
+  <DATA type="shapes" id="POINTS" name="Points">NOT SET</DATA>
+  <OPTION type="table_field" id="FIELD" name="Attribute" index="-1">&lt;no attributes&gt;</OPTION>
+  <OPTION type="choice" id="TARGET_DEFINITION" name="Target Grid System" index="0">user defined</OPTION>
+  <OPTION type="double" id="TARGET_USER_SIZE" name="Cellsize">25</OPTION>
+  <OPTION type="double" id="TARGET_USER_XMIN" name="West">382000</OPTION>
+  <OPTION type="double" id="TARGET_USER_XMAX" name="East">526000</OPTION>
+  <OPTION type="double" id="TARGET_USER_YMIN" name="South">6746000</OPTION>
+  <OPTION type="double" id="TARGET_USER_YMAX" name="North">6886000</OPTION>
+  <OPTION type="integer" id="TARGET_USER_COLS" name="Columns">101</OPTION>
+  <OPTION type="integer" id="TARGET_USER_ROWS" name="Rows">101</OPTION>
+  <OPTION type="choice" id="TARGET_USER_FITS" name="Fit" index="0">nodes</OPTION>
+  <OPTION type="grid_system" id="TARGET_SYSTEM" name="Grid System">
+    <CELLSIZE>0</CELLSIZE>
+    <XMIN>0</XMIN>
+    <YMIN>0</YMIN>
+    <XMAX>0</XMAX>
+    <YMAX>0</YMAX>
+  </OPTION>
+  <DATA type="grid" id="TARGET_TEMPLATE" name="Target System">NOT SET</DATA>
+  <DATA type="grid" id="PREDICTION" name="Prediction">CREATE</DATA>
+  <DATA type="grid" id="VARIANCE" name="Prediction Error">NOT SET</DATA>
+  <OPTION type="boolean" id="VARIANCE_CREATE" name="Prediction Error">false</OPTION>
+  <OPTION type="choice" id="TQUALITY" name="Error Measure" index="0">Standard Deviation</OPTION>
+  <OPTION type="double" id="VAR_MAXDIST" name="Maximum Distance">-1</OPTION>
+  <OPTION type="integer" id="VAR_NCLASSES" name="Lag Distance Classes">100</OPTION>
+  <OPTION type="integer" id="VAR_NSKIP" name="Skip">1</OPTION>
+  <OPTION type="text" id="VAR_MODEL" name="Model">a + b * x</OPTION>
+  <OPTION type="boolean" id="LOG" name="Logarithmic Transformation">false</OPTION>
+  <OPTION type="boolean" id="BLOCK" name="Block Kriging">false</OPTION>
+  <OPTION type="double" id="DBLOCK" name="Block Size">100</OPTION>
+  <OPTION type="choice" id="CV_METHOD" name="Cross Validation" index="0">none</OPTION>
+  <DATA type="table" id="CV_SUMMARY" name="Cross Validation Summary">NOT SET</DATA>
+  <DATA type="shapes" id="CV_RESIDUALS" name="Cross Validation Residuals">NOT SET</DATA>
+  <OPTION type="integer" id="CV_SAMPLES" name="Cross Validation Subsamples">10</OPTION>
+  <OPTION type="choice" id="SEARCH_RANGE" name="Search Range" index="0">local</OPTION>
+  <OPTION type="double" id="SEARCH_RADIUS" name="Maximum Search Distance">40000</OPTION>
+  <OPTION type="choice" id="SEARCH_POINTS_ALL" name="Number of Points" index="0">maximum number of nearest points</OPTION>
+  <OPTION type="integer" id="SEARCH_POINTS_MIN" name="Minimum">16</OPTION>
+  <OPTION type="integer" id="SEARCH_POINTS_MAX" name="Maximum">16</OPTION>
+</parameters>

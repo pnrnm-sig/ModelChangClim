@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<parameters name="Potential Incoming Solar Radiation">
+  <OPTION type="grid_system" id="PARAMETERS_GRID_SYSTEM" name="Grid System">
+    <CELLSIZE>0</CELLSIZE>
+    <XMIN>0</XMIN>
+    <YMIN>0</YMIN>
+    <XMAX>0</XMAX>
+    <YMAX>0</YMAX>
+  </OPTION>
+  <DATA type="grid" id="GRD_DEM" name="Elevation">NOT SET</DATA>
+  <DATA type="grid" id="GRD_SVF" name="Sky View Factor">NOT SET</DATA>
+  <DATA type="grid" id="GRD_VAPOUR" name="Water Vapour Pressure [mbar]">NOT SET</DATA>
+  <OPTION type="double" id="GRD_VAPOUR_DEFAULT" name="Default">10</OPTION>
+  <DATA type="grid" id="GRD_LINKE" name="Linke Turbidity Coefficient">NOT SET</DATA>
+  <OPTION type="double" id="GRD_LINKE_DEFAULT" name="Default">3</OPTION>
+  <DATA type="grid" id="GRD_DIRECT" name="Direct Insolation">CREATE</DATA>
+  <DATA type="grid" id="GRD_DIFFUS" name="Diffuse Insolation">CREATE</DATA>
+  <DATA type="grid" id="GRD_TOTAL" name="Total Insolation">CREATE</DATA>
+  <DATA type="grid" id="GRD_RATIO" name="Direct to Diffuse Ratio">NOT SET</DATA>
+  <DATA type="grid" id="GRD_FLAT" name="Compare to Flat Terrain">NOT SET</DATA>
+  <DATA type="grid" id="GRD_DURATION" name="Duration of Insolation">NOT SET</DATA>
+  <DATA type="grid" id="GRD_SUNRISE" name="Sunrise">NOT SET</DATA>
+  <DATA type="grid" id="GRD_SUNSET" name="Sunset">NOT SET</DATA>
+  <OPTION type="double" id="SOLARCONST" name="Solar Constant [W/m²]">1367</OPTION>
+  <OPTION type="boolean" id="LOCALSVF" name="Local Sky View Factor">true</OPTION>
+  <OPTION type="choice" id="UNITS" name="Units" index="2">[J/cm²]</OPTION>
+  <OPTION type="choice" id="SHADOW" name="Shadow" index="1">fat</OPTION>
+  <OPTION type="choice" id="LOCATION" name="Location" index="1">calculate from grid system</OPTION>
+  <OPTION type="degree" id="LATITUDE" name="Latitude">48</OPTION>
+  <OPTION type="choice" id="PERIOD" name="Time Period" index="2">range of days</OPTION>
+  <OPTION type="date" id="DAY" name="Day">1996-01-01</OPTION>
+  <OPTION type="date" id="DAY_STOP" name="Last Day">1996-01-31</OPTION>
+  <OPTION type="integer" id="DAYS_STEP" name="Resolution [d]">1</OPTION>
+  <OPTION type="double" id="MOMENT" name="Moment [h]">12</OPTION>
+  <OPTION type="range" id="HOUR_RANGE" name="Time Span [h]">0; 24</OPTION>
+  <OPTION type="double" id="HOUR_STEP" name="Resolution [h]">1</OPTION>
+  <OPTION type="choice" id="METHOD" name="Atmospheric Effects" index="2">Lumped Atmospheric Transmittance</OPTION>
+  <OPTION type="double" id="ATMOSPHERE" name="Height of Atmosphere [m]">12000</OPTION>
+  <OPTION type="double" id="PRESSURE" name="Barometric Pressure [mbar]">1013</OPTION>
+  <OPTION type="double" id="WATER" name="Water Content [cm]">1.68</OPTION>
+  <OPTION type="double" id="DUST" name="Dust [ppm]">100</OPTION>
+  <OPTION type="double" id="LUMPED" name="Lumped Atmospheric Transmittance [Percent]">70</OPTION>
+  <OPTION type="choice" id="UPDATE" name="Update" index="0">do not update</OPTION>
+  <OPTION type="double" id="UPDATE_STRETCH" name="Constant Histogram Stretch">1</OPTION>
+</parameters>
